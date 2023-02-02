@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReceptionMenuController">
+   <children>
+      <ImageView disable="true" fitHeight="604.0" fitWidth="807.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/image21.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-2.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ImageView accessibleRole="BUTTON" fitHeight="120.0" fitWidth="240.0" layoutX="59.0" layoutY="93.0" onMouseClicked="#checkAvailableOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/image1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" fitHeight="120.0" fitWidth="240.0" layoutX="58.0" layoutY="247.0" onMouseClicked="#registerOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/image7.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" fitHeight="120.0" fitWidth="240.0" layoutX="58.0" layoutY="403.0" onMouseClicked="#cancelOnClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/image8.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Group disable="true" layoutX="18.0" layoutY="14.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitHeight="62.0" fitWidth="62.0" layoutX="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/receptionist.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="7.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reception Online">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Circle fill="#1fff49" layoutY="80.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <ImageView fitHeight="479.0" fitWidth="478.0" layoutX="322.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/image.png" />
+         </image></ImageView>
+      <Label accessibleRole="BUTTON" layoutX="702.0" layoutY="567.0" onMouseClicked="#logOutOnAction" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Futura Bk BT Book" size="17.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Group layoutX="40.0" layoutY="24.0" />
+   </children>
+</AnchorPane>

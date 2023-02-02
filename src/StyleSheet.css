@@ -1,0 +1,20 @@
+.body{
+    -fx-background-image: "/Images/bk3.jpg";
+}
+.paneRoom{
+    -fx-background-image: url("/Images/1.jpg");
+}
+
+.paneRoom{
+    -fx-background-radius: 28;
+}
+.paneResp {
+    -fx-background-color: linear-gradient(to bottom, #669900 0%, #ffff66 100%);
+
+}
+.available{
+    -fx-background-color: linear-gradient(to bottom, B33030 5%, #19282F 100%);
+}
+.node{
+    -fx-background-radius: 36;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="199.0" prefWidth="376.0" style="-fx-background-radius: 28; -fx-border-radius: 28;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CancelBookingController">
+   <children>
+      <Pane fx:id="paneRoom11" layoutX="1.0" layoutY="3.0" prefHeight="199.0" prefWidth="376.0" style="-fx-background-radius: 28;">
+         <children>
+            <ImageView fx:id="roomDelete" fitHeight="205.0" fitWidth="382.0" layoutX="-4.0" layoutY="-3.0" opacity="0.87" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/image%20(11).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="238.0" layoutY="108.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: darkRed;" text="Delete" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bodoni MT Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField layoutX="84.0" layoutY="28.0" prefHeight="40.0" prefWidth="167.0" promptText="Enter Booking No" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

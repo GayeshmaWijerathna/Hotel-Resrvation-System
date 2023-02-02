@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminMenuController">
+   <children>
+      <ImageView accessibleRole="BUTTON" fitHeight="608.0" fitWidth="809.0" layoutX="-4.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/2.jpg" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <Label accessibleRole="BUTTON" layoutX="692.0" layoutY="557.0" onMouseClicked="#logOutOnAction" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Futura Bk BT Book" size="17.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView accessibleRole="BUTTON" fitHeight="190.0" fitWidth="299.0" layoutX="451.0" layoutY="70.0" onMouseClicked="#updateMealsOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/image%20(3).png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.05" height="38.55" radius="21.74" width="50.41">
+               <input>
+                  <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="33.49" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="205.0" fitWidth="293.0" layoutX="88.0" layoutY="305.0" onMouseClicked="#bookOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/image%20(4).png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="33.95" radius="18.427500000000002" width="41.76">
+               <input>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.88" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow height="1.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="189.0" fitWidth="300.0" layoutX="400.0" layoutY="300.0" onMouseClicked="#cancelBookingOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/image%20(5).png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="16.43" radius="11.8225" width="32.86">
+               <input>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.88" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow height="1.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/1%201.png" />
+         </image>
+         <effect>
+            <Glow level="1.0">
+               <input>
+                  <InnerShadow height="0.0" radius="0.0" width="0.0" />
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="200.0" fitWidth="200.0" layoutX="296.0" layoutY="524.0" onMouseClicked="#ReportsOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/image%20(6).png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.67" height="0.0" radius="0.0" width="0.0">
+               <input>
+                  <Lighting diffuseConstant="2.0" specularConstant="1.29" specularExponent="33.02" surfaceScale="4.88">
+                     <bumpInput>
+                        <Shadow height="77.34" radius="26.310000000000002" width="29.9" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Group layoutX="48.0" layoutY="24.0">
+         <children>
+            <ImageView accessibleRole="BUTTON" fitHeight="62.0" fitWidth="62.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Admin.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="7.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Online">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Circle fill="#1fff49" layoutY="80.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Group>
+      <ImageView accessibleRole="BUTTON" fitHeight="186.0" fitWidth="287.0" focusTraversable="true" layoutX="167.0" layoutY="69.0" onMouseClicked="#updateRoomsOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/image%20(2).png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="35.03" radius="15.670000000000002" width="29.65">
+               <input>
+                  <Lighting diffuseConstant="1.58" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow height="1.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="78.49" elevation="137.09" />
+                     </light>
+                  </Lighting>
+               </input>
+            </InnerShadow>
+         </effect>
+      </ImageView>
+      <Group layoutX="30.0" layoutY="14.0" />
+   </children>
+</AnchorPane>

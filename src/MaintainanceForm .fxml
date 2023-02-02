@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="351.0" prefWidth="315.0" style="-fx-background-radius: 28;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MaintainanceFormController">
+   <children>
+      <Pane prefHeight="351.0" prefWidth="315.0" style="-fx-background-radius: 28;">
+         <children>
+            <ImageView fitHeight="357.0" fitWidth="322.0" layoutX="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Images/image22.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="88.0" layoutY="54.0" stroke="WHITE" strokeType="OUTSIDE" text="Under Maintenance">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single Rooms">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double Rooms">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tripple Rooms">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quard Rooms">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <TextField layoutX="107.0" layoutY="102.0" prefHeight="25.0" prefWidth="128.0" promptText="        Room No" />
+            <TextField layoutX="107.0" layoutY="164.0" prefHeight="25.0" prefWidth="128.0" promptText="        Room No" />
+            <TextField layoutX="107.0" layoutY="228.0" prefHeight="25.0" prefWidth="128.0" promptText="        Room No" />
+            <TextField layoutX="107.0" layoutY="288.0" prefHeight="25.0" prefWidth="128.0" promptText="        Room No" />
+            <Label accessibleRole="BUTTON" layoutX="268.0" layoutY="331.0" onMouseClicked="#logOutOnAction" text="Close" textFill="WHITE">
+               <font>
+                  <Font name="Futura Bk BT Book" size="10.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="48.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/22.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="249.0" layoutY="102.0" mnemonicParsing="false" onAction="#addOnAction" text="Add" />
+            <Button layoutX="249.0" layoutY="164.0" mnemonicParsing="false" onAction="#addOnAction2" text="Add" />
+            <Button layoutX="249.0" layoutY="228.0" mnemonicParsing="false" onAction="#addOnAction3" text="Add" />
+            <Button layoutX="249.0" layoutY="288.0" mnemonicParsing="false" onAction="#addOnAction4" text="Add" />
+         </children>
+         <effect>
+            <ColorAdjust brightness="-0.02" contrast="0.02" hue="0.02" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

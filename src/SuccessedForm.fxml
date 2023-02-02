@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="155.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SuccessedFormController">
+   <children>
+      <Pane layoutX="-3.0" layoutY="-1.0" opacity="0.77" prefHeight="177.0" prefWidth="458.0">
+         <children>
+            <Group layoutX="107.0" layoutY="94.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="188.0" text="Reservation number is ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenNo" layoutX="166.0" prefHeight="25.0" prefWidth="84.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Label alignment="BASELINE_CENTER" graphicTextGap="77.0" layoutX="50.0" layoutY="56.0" lineSpacing="15.0" prefHeight="28.0" prefWidth="347.0" text="Room Reservation Successful !" textFill="#0e023c" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="53.0" layoutX="191.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/right.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="97.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmation E-mail has been sent to Customer">
+               <font>
+                  <Font name="Arial Unicode MS" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

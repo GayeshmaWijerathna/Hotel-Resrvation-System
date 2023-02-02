@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Room_Reservation_Sys:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Room_Reservation_Sys_jar</output-path>
+    <root id="archive" name="Room_Reservation_Sys.jar">
+      <element id="module-output" name="Room_Reservation_Sys" />
+      <element id="library" level="project" name="javafx-sdk-18.0" />
+    </root>
+  </artifact>
+</component>
